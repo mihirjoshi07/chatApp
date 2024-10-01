@@ -34,7 +34,6 @@ const userRoutes=require("./routes/user");
 app.use("/api",authRoutes)
 app.use("/message",messageRoutes)
 app.use("/user",userRoutes);
-console.log(path.join(__dirname,"../frontend/dist"))
 app.use(express.static(path.join(__dirname,"../frontend/dist")));
 
 server.listen(PORT,()=>{
