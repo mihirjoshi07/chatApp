@@ -10,7 +10,7 @@ const useLogout=()=>{
    const logout=async()=>{
         setLoading(true)
         try {
-            const res=await fetch("http://localhost:5000/api/logout",{
+            const res=await fetch("https://chatapp-vq6i.onrender.com/api/logout",{
                 method:"GET",
                 headers:{"Content-Type":"application-json"}
             })

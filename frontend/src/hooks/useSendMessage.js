@@ -9,7 +9,7 @@ const useSendMessage = () => {
 	const sendMessage = async (message) => {
 		setLoading(true);
 		try {
-			const res = await fetch(`http://localhost:5000/message/send/${selectedConversation._id}`, {
+			const res = await fetch(`https://chatapp-vq6i.onrender.com/message/send/${selectedConversation._id}`, {
 				method: "POST",
                 credentials: 'include', // This ensures that cookies are sent along with the request
 

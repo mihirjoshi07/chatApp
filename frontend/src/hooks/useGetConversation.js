@@ -10,7 +10,7 @@ const useGetConversation = () => {
     const getConversations=async()=>{
         setLoading(true);
         try {
-            const res = await fetch("http://localhost:5000/user", {
+            const res = await fetch("https://chatapp-vq6i.onrender.com/user", {
                 method: 'GET', // or POST, PUT, etc.
                 credentials: 'include', // This ensures that cookies are sent along with the request
                 headers: {
